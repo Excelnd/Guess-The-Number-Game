@@ -14,10 +14,10 @@ public class GameConfig {
 
     // -- fields --
     @Value("${game.maxNumber:20}")
-    private int maxNumber = 25;
+    private int maxNumber;
 
     @Value("${game.guessCount:5}")
-    private int guessCount = 8;
+    private int guessCount;
 
     @Value("${game.minNumber:5}")
     private int minNumber;
