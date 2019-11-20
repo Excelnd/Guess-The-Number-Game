@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 @Slf4j
 @Component
-public class ConsoleNumberGuess {
+public class ConsoleNumberGuess_Delete_it {
 
     // -- fields --
     private final Game game;
@@ -20,7 +20,7 @@ public class ConsoleNumberGuess {
     private final MessageGenerator messageGenerator;
 
     // -- constructors --
-    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+    public ConsoleNumberGuess_Delete_it(Game game, MessageGenerator messageGenerator) {
         this.game = game;
         this.messageGenerator = messageGenerator;
     }
