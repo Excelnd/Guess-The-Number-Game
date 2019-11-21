@@ -1,5 +1,6 @@
 package ihs.learnprogramming.controller;
 
+import ihs.learnprogramming.Game;
 import ihs.learnprogramming.service.GameService;
 import ihs.learnprogramming.util.AttributeNames;
 import ihs.learnprogramming.util.GameMappings;
@@ -47,5 +48,9 @@ public class GameController {
         return GameMappings.REDIRECT_PLAY;
     }
 
-
+    @GetMapping(GameMappings.RESTART)
+    public String restart() {
+        gameService.reset();
+        return GameMappings.REDIRECT_PLAY;
+    }
 }
