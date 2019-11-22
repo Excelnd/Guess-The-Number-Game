@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="headId">
     <meta charset="UTF-8">
     <title>Game</title>
 </head>
@@ -8,14 +8,14 @@
     <div align="center">
         <h1>Welcome to Guess the Number Game</h1>
 
-        <h3 th:text="${__${T(ihs.learnprogramming.util.AttributeNames).MAIN_MESSAGE}__}">
+        <h3 id="main-message">
             Main Message Content
         </h3>
-        <h3 th:text="${__${T(ihs.learnprogramming.util.AttributeNames).RESULT_MESSAGE}__}">
+        <h3 id="result-message">
             Result Message Content
         </h3>
 
-        <form th:action="@{__${T(ihs.learnprogramming.util.GameMappings).PLAY}__}"
+        <form id="game-form"
               action="play"
               method="post">
             <lable for="guess">Enter your guess</lable>
@@ -23,8 +23,8 @@
             <input type="submit" value="Submit"/>
         </form>
 
-        <footer>
-            <p>Created by the Ihs Programming Co.</p>
+        <footer id="footerId">
+            <p>Created by goes here</p>
         </footer>
 
     </div>
