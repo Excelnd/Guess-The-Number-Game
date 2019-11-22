@@ -2,4 +2,5 @@
 
     <attr sel="#footerId"
           th:fragment="footer"/>
+    <attr sel="#created-by" th:text="|#{game.createdBy} the Ihs Programming Co.|"/>
 </thlogic>
